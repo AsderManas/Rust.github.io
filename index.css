@@ -1,0 +1,159 @@
+:root {
+    --background-color: rgb(5,10, 24);
+    --border-color: rgb(255, 255, 255, 0.1);
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    overflow: visible;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+}
+
+nav > .nav-section {
+    padding: 1rem 23.7%;
+    display: flex;
+    gap: 1rem;
+    border-left: 1px solid var(--border-color);
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, a, p, span {
+    font-family: "rubik", sans-serif;
+    font-weight: 400;
+    color:white
+}
+
+a {
+    text-decoration: none;
+}
+
+#nav-image {
+    flex-basis: calc(100% / 1);
+}
+
+#nav-main {
+    justify-content: flex-start;
+}
+
+
+#nav-main > a > i {
+    font-size: 2.0rem;
+}
+#nav-image > a > i {
+    font-size: 2.0rem;
+}
+
+main {
+    flex-grow: 1;
+    position: relative;
+}
+
+main > article {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    left: 0px;
+    right: 0px;
+}
+
+main > article > .article-section {
+    height: 100%;
+}
+main > article > .article-description,
+main > article > .article-nav {
+    border-left: 1px solid var(--border-color);
+}
+
+main > article > .article-title,
+main > article > .article-nav {
+    border-top: 1px solid var(--border-color);
+}
+
+div > img {
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+article {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 300%;
+}
+
+article > div > a > button {
+    font-size: 3rem;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition-timing-function: ease;
+    transition-duration: 200ms;
+    color: white;
+    margin: 5px;
+}
+article > div > a > button:active {
+    transform: translateX(-50%) scale(0.86);
+}
+
+article > div{
+    padding-top: 10px;
+}
+main > article {
+    position: absolute;
+}
+
+article > div > a > button:hover {
+    background-color: gray;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.image {
+    border: 1px solid var(--border-color);
+    width: 50%;
+}
+
+.src {
+    color: aquamarine;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+h2 {
+    text-align: center;
+    align-content: center;
+    margin: 5px;
+    padding: 0px;
+}
