@@ -1,1 +1,1 @@
-# Rust.github.io
+# Rust
